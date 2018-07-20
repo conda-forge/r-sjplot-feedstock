@@ -1,4 +1,4 @@
-{% set version = '2.4.1' %}
+{% set version = "2.5.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/sjPlot_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/sjPlot/sjPlot_{{ version }}.tar.gz
-  sha256: 30ff81865440987774ed240cbd0b5c98d67c42cfd054e74bd3b2dca571ee5f29
+  sha256: 822f71ba9fd32b1c098e646049e26607adcdb818058c6cb9e254227e6e6952a6
 
 build:
   number: 0
