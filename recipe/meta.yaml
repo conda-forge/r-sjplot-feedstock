@@ -15,8 +15,8 @@ source:
   sha256: 822f71ba9fd32b1c098e646049e26607adcdb818058c6cb9e254227e6e6952a6
 
 build:
-  number: 0
-  skip: true  # [win32]
+  noarch: generic
+  number: 1000
 
   rpaths:
     - lib/R/lib/
@@ -95,8 +95,7 @@ about:
     scales, effects plots of regression  models (including interaction terms) and much
     more. This package supports labelled data.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
