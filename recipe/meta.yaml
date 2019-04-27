@@ -25,6 +25,9 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
+    - r-bayestestr
+    - r-insight
+    - r-performance
     - r-mass
     - r-broom
     - r-dplyr >=0.7.5
@@ -47,6 +50,9 @@ requirements:
     - r-tidyr >=0.7.0
   run:
     - r-base
+    - r-bayestestr
+    - r-insight
+    - r-performance
     - r-mass
     - r-broom
     - r-dplyr >=0.7.5
