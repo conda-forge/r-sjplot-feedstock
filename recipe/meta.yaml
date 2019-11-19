@@ -1,4 +1,4 @@
-{% set version = '2.7.2' %}
+{% set version = "2.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sjPlot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sjPlot/sjPlot_{{ version }}.tar.gz
-  sha256: 170acb9b3f8a2819e4d1d60cce8f765d5e7b4345bb268b2fe71c3a721fc6a1cf
+  sha256: 2bad9cac35c27c7702462a039eaad09010ed54ae53711bcf28016fb8cc361f2a
 
 build:
   merge_build_host: True  # [win]
@@ -26,56 +26,54 @@ requirements:
   host:
     - r-base
     - r-mass
-    - r-bayestestr >=0.3.0
-    - r-broom
+    - r-bayestestr >=0.4.0
     - r-dplyr >=0.8.1
+    - r-effectsize
     - r-forcats
-    - r-ggeffects >=0.12.0
+    - r-ggeffects >=0.13.0
     - r-ggplot2 >=3.2.0
     - r-ggrepel
     - r-glmmtmb
-    - r-insight >=0.5.0
+    - r-insight >=0.6.0
     - r-knitr
     - r-lme4 >=1.1_12
     - r-magrittr
     - r-modelr
-    - r-nlme
     - r-parameters >=0.2.0
-    - r-performance >=0.3.0
+    - r-performance >=0.4.0
     - r-psych
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.1.0
+    - r-sjlabelled >=1.1.1
     - r-sjmisc >=2.8.2
-    - r-sjstats >=0.17.5
+    - r-sjstats >=0.17.7
     - r-tidyr >=1.0.0
   run:
     - r-base
     - r-mass
-    - r-bayestestr >=0.3.0
-    - r-broom
+    - r-bayestestr >=0.4.0
     - r-dplyr >=0.8.1
+    - r-effectsize
     - r-forcats
-    - r-ggeffects >=0.12.0
+    - r-ggeffects >=0.13.0
     - r-ggplot2 >=3.2.0
     - r-ggrepel
     - r-glmmtmb
-    - r-insight >=0.5.0
+    - r-insight >=0.6.0
     - r-knitr
     - r-lme4 >=1.1_12
     - r-magrittr
     - r-modelr
-    - r-nlme
     - r-parameters >=0.2.0
-    - r-performance >=0.3.0
+    - r-performance >=0.4.0
     - r-psych
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.1.0
+    - r-sjlabelled >=1.1.1
     - r-sjmisc >=2.8.2
-    - r-sjstats >=0.17.5
+    - r-sjstats >=0.17.7
     - r-tidyr >=1.0.0
 
 test:
