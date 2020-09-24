@@ -1,4 +1,4 @@
-{% set version = "2.8.4" %}
+{% set version = "2.8.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sjPlot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sjPlot/sjPlot_{{ version }}.tar.gz
-  sha256: cde3d9433a135936d06f5dd89f8ec0904eb0cb9a7df510b81113cd097505f32c
+  sha256: 44c47c7c31a8369fed11210a8691bb44bc64af633c3d64668e6090a49e51dc1d
 
 build:
   merge_build_host: true  # [win]
