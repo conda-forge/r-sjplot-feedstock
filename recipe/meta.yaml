@@ -26,54 +26,40 @@ requirements:
   host:
     - r-base
     - r-mass
-    - r-bayestestr >=0.4.0
+    - r-bayestestr >=0.6.0
     - r-dplyr >=0.8.1
     - r-effectsize
-    - r-forcats
-    - r-ggeffects >=0.13.0
+    - r-ggeffects >=0.14.3
     - r-ggplot2 >=3.2.0
-    - r-ggrepel
-    - r-glmmtmb
-    - r-insight >=0.6.0
+    - r-insight >=0.8.0
     - r-knitr
-    - r-lme4 >=1.1_12
-    - r-magrittr
-    - r-modelr
-    - r-parameters >=0.2.0
-    - r-performance >=0.4.0
-    - r-psych
+    - r-parameters >=0.7.0
+    - r-performance >=0.4.3
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.1.1
+    - r-sjlabelled >=1.1.2
     - r-sjmisc >=2.8.2
-    - r-sjstats >=0.17.7
+    - r-sjstats >=0.17.8
     - r-tidyr >=1.0.0
   run:
     - r-base
     - r-mass
-    - r-bayestestr >=0.4.0
+    - r-bayestestr >=0.6.0
     - r-dplyr >=0.8.1
     - r-effectsize
-    - r-forcats
-    - r-ggeffects >=0.13.0
+    - r-ggeffects >=0.14.3
     - r-ggplot2 >=3.2.0
-    - r-ggrepel
-    - r-glmmtmb
-    - r-insight >=0.6.0
+    - r-insight >=0.8.0
     - r-knitr
-    - r-lme4 >=1.1_12
-    - r-magrittr
-    - r-modelr
-    - r-parameters >=0.2.0
-    - r-performance >=0.4.0
-    - r-psych
+    - r-parameters >=0.7.0
+    - r-performance >=0.4.3
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.1.1
+    - r-sjlabelled >=1.1.2
     - r-sjmisc >=2.8.2
-    - r-sjstats >=0.17.7
+    - r-sjstats >=0.17.8
     - r-tidyr >=1.0.0
 
 test:
@@ -83,11 +69,12 @@ test:
 
 about:
   home: https://strengejacke.github.io/sjPlot/
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Collection of plotting and table output functions for data visualization. Results of various statistical analyses (that are commonly used in social sciences) can be visualized using this package, including simple and cross tabulated frequencies, histograms, box plots, (generalized) linear models, mixed effects
     models, principal component analysis and correlation matrices, cluster analyses, scatter plots, stacked scales, effects plots of regression models (including interaction terms) and much more. This package supports labelled data.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
