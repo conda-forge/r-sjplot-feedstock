@@ -23,18 +23,20 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-mass
-    - r-bayestestr >=0.6.0
-    - r-dplyr >=0.8.1
+    - r-bayestestr
+    - r-datawizard
+    - r-dplyr
     - r-effectsize
-    - r-ggeffects >=0.14.3
+    - r-ggeffects
     - r-ggplot2 >=3.2.0
-    - r-insight >=0.8.0
+    - r-insight
     - r-knitr
-    - r-parameters >=0.7.0
-    - r-performance >=0.4.3
+    - r-parameters
+    - r-performance
     - r-purrr
     - r-rlang
     - r-scales
@@ -45,15 +47,16 @@ requirements:
   run:
     - r-base
     - r-mass
-    - r-bayestestr >=0.6.0
-    - r-dplyr >=0.8.1
+    - r-bayestestr
+    - r-datawizard
+    - r-dplyr
     - r-effectsize
-    - r-ggeffects >=0.14.3
+    - r-ggeffects
     - r-ggplot2 >=3.2.0
-    - r-insight >=0.8.0
+    - r-insight
     - r-knitr
-    - r-parameters >=0.7.0
-    - r-performance >=0.4.3
+    - r-parameters
+    - r-performance
     - r-purrr
     - r-rlang
     - r-scales
