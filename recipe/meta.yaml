@@ -1,4 +1,4 @@
-{% set version = "2.8.8" %}
+{% set version = "2.8.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sjPlot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sjPlot/sjPlot_{{ version }}.tar.gz
-  sha256: 1f430db0f793ee089e9ce0b1d8ccec479f897402f21ed314b2c1ffc77c560a14
+  sha256: f8b4f6a80b920a69a4a40f8cf892e4491ec91a23d1c8f4aef2b59bb578b9691d
 
 build:
   merge_build_host: true  # [win]
@@ -23,18 +23,20 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-mass
-    - r-bayestestr >=0.6.0
-    - r-dplyr >=0.8.1
+    - r-bayestestr
+    - r-datawizard
+    - r-dplyr
     - r-effectsize
-    - r-ggeffects >=0.14.3
+    - r-ggeffects
     - r-ggplot2 >=3.2.0
-    - r-insight >=0.8.0
+    - r-insight
     - r-knitr
-    - r-parameters >=0.7.0
-    - r-performance >=0.4.3
+    - r-parameters
+    - r-performance
     - r-purrr
     - r-rlang
     - r-scales
@@ -45,15 +47,16 @@ requirements:
   run:
     - r-base
     - r-mass
-    - r-bayestestr >=0.6.0
-    - r-dplyr >=0.8.1
+    - r-bayestestr
+    - r-datawizard
+    - r-dplyr
     - r-effectsize
-    - r-ggeffects >=0.14.3
+    - r-ggeffects
     - r-ggplot2 >=3.2.0
-    - r-insight >=0.8.0
+    - r-insight
     - r-knitr
-    - r-parameters >=0.7.0
-    - r-performance >=0.4.3
+    - r-parameters
+    - r-performance
     - r-purrr
     - r-rlang
     - r-scales
