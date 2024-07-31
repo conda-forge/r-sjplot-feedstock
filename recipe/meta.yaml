@@ -1,6 +1,5 @@
 {% set version = "2.8.16" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-sjplot
@@ -13,8 +12,7 @@ source:
   sha256: 510a73b6b58cd3bbaddb18ea54d2f2b1dd9e07427e71684b9e2422fc82ad7624
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
