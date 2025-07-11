@@ -1,4 +1,4 @@
-{% set version = "2.8.17" %}
+{% set version = "2.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sjPlot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sjPlot/sjPlot_{{ version }}.tar.gz
-  sha256: f229b3ece04fc55bcf7ed670827a26dcb374ce0f7c97e19240b8486c97005165
+  sha256: 4da6c11cfc047278156c47037b45e273fe9c2ddea766cddf2a8c4af8e94cf128
 
 build:
   number: 0
